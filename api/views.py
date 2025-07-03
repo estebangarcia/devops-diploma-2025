@@ -14,7 +14,7 @@ class BookView(APIView):
     
     def get(self, request, *args, **kwargs):
         return Response({
-            "hello": "django"
+            "hello": ""
         })
 
 book_view = BookView.as_view()
