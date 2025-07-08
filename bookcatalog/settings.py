@@ -17,10 +17,10 @@ from environs import Env
 env = Env()
 
 DEVELOPMENT_MODE = env.bool("DEVELOPMENT_MODE", True)
-DATABASE_NAME = env.str("DATABASE_NAME")
-DATABASE_USER = env.str("DATABASE_USER")
-DATABASE_PASSWORD = env.str("DATABASE_PASSWORD")
-DATABASE_HOST = env.str("DATABASE_HOST")
+DATABASE_NAME = env.str("DATABASE_NAME", "")
+DATABASE_USER = env.str("DATABASE_USER", "")
+DATABASE_PASSWORD = env.str("DATABASE_PASSWORD", "")
+DATABASE_HOST = env.str("DATABASE_HOST", "")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
